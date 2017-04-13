@@ -37,12 +37,12 @@ class ParrotTest {
     }
 
     @Test fun getSpeedNorwegianBlueParrot() {
-        val parrot = Parrot.norwegianBlue(1.5, false)
+        val parrot = Parrot.norwegianBlue(1.5)
         assertEquals(parrot.speed, 18.0)
     }
 
     @Test fun getSpeedNorwegianBlueParrot_high_voltage() {
-        val parrot = Parrot.norwegianBlue(4.0, false)
+        val parrot = Parrot.norwegianBlue(4.0)
         assertEquals(parrot.speed, 24.0)
     }
 }

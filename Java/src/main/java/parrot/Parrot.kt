@@ -17,7 +17,7 @@ abstract class Parrot {
             return AfricanParrot(numberOfCoconuts)
         }
 
-        fun norwegianBlue(voltage: Double, isNailed: Boolean): Parrot {
+        fun norwegianBlue(voltage: Double, isNailed: Boolean = false): Parrot {
             if (isNailed) {
                 return NailedParrot()
             }
