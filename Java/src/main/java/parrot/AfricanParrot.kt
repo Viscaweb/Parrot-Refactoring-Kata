@@ -6,6 +6,5 @@ class AfricanParrot internal constructor(private val numberOfCoconuts: Int) : Pa
         private val LOAD_FACTOR = 9.0
     }
 
-    override val speed: Double
-        get() = Math.max(0.0, baseSpeed - LOAD_FACTOR * numberOfCoconuts)
+    override val speed get() = Math.max(0.0, baseSpeed - LOAD_FACTOR * numberOfCoconuts)
 }

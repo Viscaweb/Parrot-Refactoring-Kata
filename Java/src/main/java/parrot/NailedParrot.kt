@@ -2,6 +2,5 @@ package parrot
 
 class NailedParrot : Parrot() {
 
-    override val speed: Double
-        get() = 0.0
+    override val speed get() = 0.0
 }

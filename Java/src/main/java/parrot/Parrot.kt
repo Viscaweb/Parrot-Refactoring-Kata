@@ -4,8 +4,7 @@ abstract class Parrot {
 
     abstract val speed: Double
 
-    internal val baseSpeed: Double
-        get() = 12.0
+    internal val baseSpeed get() = 12.0
 
     companion object {
 
