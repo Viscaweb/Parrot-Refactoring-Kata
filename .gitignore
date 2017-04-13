@@ -2,6 +2,6 @@ PHP/vendor
 *.pyc
 .cache
 __pycache__
-./gradle
+./Java/gradlew
 gradlew
 gradle.bat
