@@ -9,23 +9,13 @@ abstract class Parrot {
 
     companion object {
 
-        fun european(): Parrot {
-            return EuropeanParrot()
-        }
+        fun european(): Parrot = EuropeanParrot()
 
-        fun african(numberOfCoconuts: Int): Parrot {
-            return AfricanParrot(numberOfCoconuts)
-        }
+        fun african(numberOfCoconuts: Int): Parrot = AfricanParrot(numberOfCoconuts)
 
-        fun norwegianBlue(voltage: Double, isNailed: Boolean = false): Parrot {
-            if (isNailed) {
-                return NailedParrot()
-            }
-            return NorwegianBlueParrot(voltage)
-        }
+        fun norwegianBlue(voltage: Double, isNailed: Boolean = false): Parrot =
+                if (isNailed) NailedParrot() else NorwegianBlueParrot(voltage)
 
-        fun wasted(): Parrot {
-            return WastedParrot()
-        }
+        fun wasted(): Parrot = WastedParrot()
     }
 }
